@@ -37,6 +37,7 @@ type Options struct {
 	Password     string `long:"password" description:"Password for git repo"`
 	AccessToken  string `long:"access-token" description:"Access token for git repo"`
 	Commit       string `long:"commit" description:"sha of commit to audit"`
+	Depth        int    `long:"depth" description:"maximum commit depth"`
 	Threads      int    `long:"threads" description:"Maximum number of threads gitleaks spawns"`
 	SSH          string `long:"ssh-key" description:"path to ssh key used for auth"`
 	Uncommited   bool   `long:"uncommitted" description:"run gitleaks on uncommitted code"`
